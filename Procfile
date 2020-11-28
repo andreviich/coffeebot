@@ -1,1 +1,1 @@
-worker: pythgit on bot.py
+worker: python bot.py
