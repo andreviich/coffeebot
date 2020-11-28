@@ -44,4 +44,8 @@ def usualMessage(message):
 		)
 		img = Image.open(f'img/qr{codeToGet}.png')
 		bot.send_photo(message.chat.id, img)
+		markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+		c1 = types.KeyboardButton("Оформить заказ")
+		markup.add(c1)
+		bot.send_message(message.chat.id, 'Перейди к новому заказу!', reply_markup = markup)
 bot.polling(none_stop=True)
