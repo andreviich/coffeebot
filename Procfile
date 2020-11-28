@@ -1,0 +1,1 @@
+worker: pythgit on bot.py
